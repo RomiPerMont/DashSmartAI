@@ -69,3 +69,17 @@ The system is developed using the following technologies:
 - Plotly  
 - Scikit-learn  
 
+## How to run the system  
+
+1. Clone the repository  
+
+git clone https://github.com/RomiPerMont/DashSmartAI.git
+cd DashSmartAI
+
+2. Install the required libraries  
+
+pip install -r requirements.txt
+
+3. Run the application  
+
+streamlit run app.py
