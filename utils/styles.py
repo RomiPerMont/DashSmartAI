@@ -187,7 +187,7 @@ def load_css():
         margin-bottom: 25px;
     }
 
-    /* Selection file button BLUE */
+    /* Select file button BLUE */
     .select-file-button {
         background-color: #2563eb;
         color: white;
