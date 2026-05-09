@@ -2,12 +2,12 @@ def load_css():
     return """
     <style>
 
-    /* General whole app background */
+    /* general app background */
     .stApp {
         background-color: #f8fafc;
     }
 
-    /* Main page spacing */
+    /* main page spacing */
     .block-container {
         padding-top: 2rem;
         padding-left: 3rem;
@@ -15,18 +15,18 @@ def load_css():
         max-width: 1200px;
     }
 
-    /* Sidebar - left panel background */
+    /* sidebar background */
     section[data-testid="stSidebar"] {
         background-color: #ffffff;
         border-right: 1px solid #e5e7eb;
     }
 
-    /* Sidebar spacing*/
+    /* sidebar spacing */
     section[data-testid="stSidebar"] > div {
         padding-top: 1.5rem;
     }
 
-    /* DASHSMARTAI title on the left*/
+    /* title */
     .sidebar-title {
         font-size: 26px;
         font-weight: 700;
@@ -34,48 +34,48 @@ def load_css():
         margin-bottom: 5px;
     }
 
-    /* Logistics analytics txt under title */
+    /* subtitle */
     .sidebar-subtitle {
         font-size: 16px;
         color: #6b7280;
         margin-bottom: 35px;
     }
 
-    /* Active menu itme:Upload Data selected */
+    /* active menu item */
     .nav-active {
         background-color: #eff6ff;
         color: #2563eb;
         padding: 14px 18px;
         border-radius: 12px;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 700;
         margin-bottom: 18px;
     }
 
-    /* Other menu itmens :Dashboard, Predictive Delays */
+    /* normal menu item */
     .nav-item {
         color: #1f2937;
         padding: 14px 18px;
         border-radius: 12px;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 700;
         margin-bottom: 18px;
     }
 
-    /* Line above login and reg*/
+    /* divider */
     .sidebar-divider {
         border-top: 1px solid #e5e7eb;
         margin-top: 25px;
         margin-bottom: 20px;
     }
 
-    /* Login + register next to each other */
+    /* login + register row */
     .login-register-row {
         display: flex;
         gap: 10px;
     }
 
-    /* Login button*/
+    /* login button */
     .login-button {
         border: 1px solid #d1d5db;
         color: #1f2937;
@@ -88,7 +88,7 @@ def load_css():
         text-align: center;
     }
 
-    /*Register blue button  */
+    /* register button */
     .register-button {
         color: white;
         background-color: #2563eb;
@@ -100,7 +100,7 @@ def load_css():
         text-align: center;
     }
 
-    /* Page title: Upload Data */
+    /* page title */
     .page-title {
         font-size: 38px;
         font-weight: 700;
@@ -108,14 +108,14 @@ def load_css():
         margin-bottom: 2px;
     }
 
-    /* Page subtitle */
+    /* page subtitle */
     .page-subtitle {
         font-size: 20px;
         color: #4b5563;
         margin-bottom: 40px;
     }
 
-    /* Data requirement box (blue card) */
+    /* info card */
     .info-card {
         background-color: #eff6ff;
         border: 1px solid #bfdbfe;
@@ -124,7 +124,6 @@ def load_css():
         margin-bottom: 30px;
     }
 
-    /* Data requirement title*/
     .info-title {
         color: #1e3a8a;
         font-size: 22px;
@@ -132,14 +131,13 @@ def load_css():
         margin-bottom: 20px;
     }
 
-    /* Data requirement text */
     .info-text {
         color: #1d4ed8;
         font-size: 16px;
         line-height: 2;
     }
 
-    /* Main upload white box */
+    /* upload card */
     .upload-card {
         background-color: white;
         border: 1px solid #e5e7eb;
@@ -148,7 +146,6 @@ def load_css():
         box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
-    /* Dashed upload area */
     .upload-box {
         border: 2px dashed #cbd5e1;
         background-color: #f9fafb;
@@ -157,7 +154,6 @@ def load_css():
         text-align: center;
     }
 
-    /* Circle with arrou icon */
     .upload-circle {
         width: 82px;
         height: 82px;
@@ -172,7 +168,6 @@ def load_css():
         font-size: 40px;
     }
 
-    /* "Drop your CSV file here" */
     .upload-title {
         font-size: 24px;
         font-weight: 700;
@@ -180,14 +175,12 @@ def load_css():
         margin-bottom: 15px;
     }
 
-    /* "OR CLICK TO BROWSE" */
     .upload-subtitle {
         font-size: 20px;
         color: #4b5563;
         margin-bottom: 25px;
     }
 
-    /* Select file button BLUE */
     .select-file-button {
         background-color: #2563eb;
         color: white;
@@ -199,19 +192,18 @@ def load_css():
         margin-top: 10px;
     }
 
-    /* Support text (CSV only) */
     .support-text {
         font-size: 16px;
         color: #6b7280;
         margin-top: 15px;
     }
 
-    /* Hide REAL STREAMLIT upload button */
+    /* hide real upload */
     div[data-testid="stFileUploader"] {
         display: none;
     }
 
-    /* PROCESS DATA BUTTON */
+    /* process button */
     .stButton > button {
         background-color: #d1d5db;
         color: white;
@@ -220,6 +212,14 @@ def load_css():
         padding: 14px;
         font-size: 18px;
         font-weight: 600;
+    }
+
+    /* hide invisible sidebar buttons (for navigation clicks) */
+    section[data-testid="stSidebar"] .stButton > button {
+        height: 0;
+        padding: 0;
+        border: none;
+        background: none;
     }
 
     </style>

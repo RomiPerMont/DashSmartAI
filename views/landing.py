@@ -1,26 +1,18 @@
 import streamlit as st
+from utils.sidebar import render_sidebar
 
+def nav_item(label, page_name):
+    is_active = st.session_state.page == page_name
+    class_name = "nav-active" if is_active else "nav-item"
 
-def render_sidebar():
-    with st.sidebar:
-        st.markdown("<div class='sidebar-title'>DashSmartAI</div>", unsafe_allow_html=True)
-        st.markdown("<div class='sidebar-subtitle'>Logistics Analytics</div>", unsafe_allow_html=True)
+    if st.button("", key=f"nav_{page_name}"):
+        st.session_state.page = page_name
+        st.rerun()
 
-        st.markdown("<div class='nav-active'>Upload Data</div>", unsafe_allow_html=True)
-        st.markdown("<div class='nav-item'>Dashboard</div>", unsafe_allow_html=True)
-        st.markdown("<div class='nav-item'>Predictive Delays</div>", unsafe_allow_html=True)
-
-        st.markdown("<div class='sidebar-divider'></div>", unsafe_allow_html=True)
-
-        st.markdown(
-            """
-            <div class='login-register-row'>
-                <div class='login-button'>Login</div>
-                <div class='register-button'>Register</div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+    st.markdown(
+        f"<div class='{class_name}'>{label}</div>",
+        unsafe_allow_html=True
+    )
 
 
 def render_upload_requirements():
@@ -58,7 +50,7 @@ def render_upload_visual():
 
 
 def show():
-    render_sidebar()
+    render_sidebar("landing")
 
     st.markdown("<div class='page-title'>Upload Data</div>", unsafe_allow_html=True)
     st.markdown(
