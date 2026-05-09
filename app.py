@@ -11,21 +11,31 @@ def main():
 
     st.markdown(load_css(), unsafe_allow_html=True)
 
-if "page" not in st.session_state:
-        st.session_state.page = "landing"
+    # get page from URL
+    page = st.query_params.get("page", "landing")
 
-        if st.session_state.page == "landing":
-            landing.show()
-        elif st.session_state.page == "dashboard":
-            dashboard.show()
-        elif st.session_state.page == "upload":
-            upload.show()
-        elif st.session_state.page == "predictions":
-            predictions.show()
-        elif st.session_state.page == "history":
-            history.show()
-        elif st.session_state.page == "auth":
-            auth.show()
+    # routing
+    if page == "landing":
+        landing.show()
+
+    elif page == "dashboard":
+        dashboard.show()
+
+    elif page == "upload":
+        upload.show()
+
+    elif page == "predictions":
+        predictions.show()
+
+    elif page == "history":
+        history.show()
+
+    elif page == "auth":
+        auth.show()
+
+    else:
+        landing.show()
+
 
 if __name__ == "__main__":
     main()
