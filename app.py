@@ -2,7 +2,6 @@ import streamlit as st
 from utils.styles import load_css
 from views import landing, dashboard, upload, predictions, history, auth
 
-
 def main():
     st.set_page_config(
         page_title="DashSmartAI",
