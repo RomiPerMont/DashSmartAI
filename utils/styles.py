@@ -206,6 +206,159 @@ def load_css():
         font-size: 18px;
         font-weight: 600;
     }
+        /* =========================
+PAGE HEADER
+this is the top title area of the dashboard page
+example:
+Dashboard Overview
+Logistics performance metrics and delivery insights
+========================= */
+.page-header {
+    margin-bottom: 25px;
+}
 
+/* main dashboard title */
+.page-header h1 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+/* small subtitle under the title */
+.page-header p {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+
+/* =========================
+KPI CARDS
+these are the top statistic cards
+example:
+on-time delivery %
+average delay
+total deliveries
+active routes
+========================= */
+.kpi-card {
+    background: white;
+    padding: 22px;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    min-height: 160px;
+}
+
+/* text inside kpi cards
+example:
+On-Time Delivery Rate
+*/
+.kpi-card p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 5px;
+}
+
+/* big numbers inside kpi cards
+example:
+82%
+1200
+*/
+.kpi-card h2 {
+    color: #111827;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+}
+
+
+/* =========================
+KPI ICON BOXES
+small colored square behind icons
+========================= */
+.kpi-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+
+/* green card icon
+used for positive results */
+.green {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+/* orange card icon
+used for delay times */
+.orange {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+/* blue card icon
+used for deliveries */
+.blue {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+/* purple card icon
+used for route information */
+.purple {
+    background: #ede9fe;
+    color: #7c3aed;
+}
+
+
+/* =========================
+CHART CONTAINERS
+this is the white box around charts
+example:
+pie chart
+bar chart
+========================= */
+.chart-card {
+    background: white;
+    padding: 22px;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================
+SUMMARY SECTION
+bottom information box
+example:
+performance summary
+========================= */
+.summary-card {
+    background: linear-gradient(135deg, #ecfeff, #f0fdf4);
+    border: 1px solid #ccfbf1;
+    border-radius: 18px;
+    padding: 24px;
+}
+
+/* summary title */
+.summary-card h3 {
+    color: #111827;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* summary text */
+.summary-card p {
+    color: #374151;
+    margin-bottom: 6px;
+}
     </style>
     """
