@@ -23,6 +23,10 @@ def find_column(df, possible_names):
 
 
 def show():
+
+    # temporary check to see if the uploaded csv is saved
+    st.write(st.session_state)
+
     st.markdown(
         """
         <div class="page-header">

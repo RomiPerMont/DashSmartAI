@@ -14,6 +14,9 @@ def main():
     # get page from URL
     page = st.query_params.get("page", "landing")
 
+    # show left sidebar menu
+    render_sidebar(page)
+
     # routing
     if page == "landing":
         landing.show()
