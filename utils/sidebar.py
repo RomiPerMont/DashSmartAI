@@ -17,6 +17,7 @@ def render_sidebar(active_page):
         nav_item("Upload Data", "landing")
         nav_item("Dashboard", "dashboard")
         nav_item("Predictive Delays", "predictions")
+        nav_item("Analysis History", "history")
 
         st.markdown("<div class='sidebar-divider'></div>", unsafe_allow_html=True)
 

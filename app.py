@@ -1,5 +1,6 @@
 import streamlit as st
 from utils.styles import load_css
+from utils.sidebar import render_sidebar
 from views import landing, dashboard, upload, predictions, history, auth
 
 def main():
