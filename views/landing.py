@@ -50,7 +50,6 @@ def render_upload_visual():
 
 
 def show():
-    render_sidebar("landing")
 
     st.markdown("<div class='page-title'>Upload Data</div>", unsafe_allow_html=True)
     st.markdown(
