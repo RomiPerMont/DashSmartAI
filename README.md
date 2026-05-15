@@ -67,7 +67,8 @@ The system is developed using the following technologies:
 - Streamlit  
 - Pandas  
 - Plotly  
-- Scikit-learn  
+- Scikit-learn
+- Matplotlib
 
 ## How to run the system  
 
