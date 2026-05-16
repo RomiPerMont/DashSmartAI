@@ -43,7 +43,7 @@ def load_css():
         padding: 14px 18px;
         border-radius: 12px;
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 400;
         margin-bottom: 18px;
     }
 
@@ -54,7 +54,7 @@ def load_css():
         padding: 14px 18px;
         border-radius: 12px;
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 400;
         margin-bottom: 18px;
     }
 
