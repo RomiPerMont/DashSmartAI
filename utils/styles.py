@@ -7,7 +7,7 @@ def load_css():
     }
 
     .block-container {
-        padding-top: 2rem;
+        padding-top: 4rem;
         padding-left: 3rem;
         padding-right: 3rem;
         max-width: 1200px;
@@ -23,14 +23,14 @@ def load_css():
     }
 
     .sidebar-title {
-        font-size: 26px;
+        font-size: 40px;
         font-weight: 700;
         color: #2563eb;
         margin-bottom: 5px;
     }
 
     .sidebar-subtitle {
-        font-size: 16px;
+        font-size: 18px;
         color: #6b7280;
         margin-bottom: 35px;
     }
@@ -42,7 +42,7 @@ def load_css():
         color: #2563eb !important;
         padding: 14px 18px;
         border-radius: 12px;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 400;
         margin-bottom: 18px;
     }
@@ -53,7 +53,7 @@ def load_css():
         color: #1f2937 !important;
         padding: 14px 18px;
         border-radius: 12px;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 400;
         margin-bottom: 18px;
     }
@@ -78,12 +78,12 @@ def load_css():
 
     .login-button {
         border: 1px solid #d1d5db;
-        color: #1f2937;
+        color: #2563eb;
         background-color: #ffffff;
         padding: 14px 18px;
         border-radius: 12px;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         width: 48%;
         text-align: center;
     }
@@ -94,7 +94,7 @@ def load_css():
         padding: 14px 18px;
         border-radius: 12px;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         width: 48%;
         text-align: center;
     }
