@@ -27,17 +27,17 @@ def load_css():
         font-size: 40px;
         font-weight: 700;
         color: #2563eb;
-        margin-bottom: 5px;
+        
     }
 
     /* Logistics analytics subtitle */
     .sidebar-subtitle {
-        font-size: 18px;
+        font-size: 20px;
         color: #6b7280;
         margin-bottom: 35px;
     }
 
-   /*Sidebar style*/
+   /*Sidebar selected style*/
     .nav-active {
         display: block;
         text-decoration: none !important;
@@ -47,9 +47,10 @@ def load_css():
         border-radius: 12px;
         font-size: 22px;
         font-weight: 400;
-        margin-bottom: 18px;
+        margin-bottom: 5px;
     }
 
+   /*Sidebar style */
     .nav-item {
         display: block;
         text-decoration: none !important;
@@ -58,9 +59,10 @@ def load_css():
         border-radius: 12px;
         font-size: 22px;
         font-weight: 400;
-        margin-bottom: 18px;
+        margin-bottom: 5px;
     }
 
+    /* Sidebar hover */
     .nav-item:hover,
     .nav-active:hover {
         background-color: #eff6ff;
@@ -68,6 +70,7 @@ def load_css():
         text-decoration: none !important;
     }
 
+    
     .sidebar-divider {
         border-top: 1px solid #e5e7eb;
         margin-top: 25px;
@@ -79,42 +82,47 @@ def load_css():
         gap: 10px;
     }
 
+    /* Login button */
     .login-button {
         border: 1px solid #d1d5db;
         color: #2563eb;
         background-color: #ffffff;
         padding: 14px 18px;
         border-radius: 12px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         width: 48%;
         text-align: center;
     }
 
+   /* Register button */
     .register-button {
         color: white;
         background-color: #2563eb;
         padding: 14px 18px;
         border-radius: 12px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         width: 48%;
         text-align: center;
     }
 
+    /* Upload data title */
     .page-title {
         font-size: 38px;
         font-weight: 700;
-        color: #111827;
+        color: #6b7280;
         margin-bottom: 2px;
     }
 
+    /* Upload data SUBtitle */
     .page-subtitle {
         font-size: 20px;
         color: #4b5563;
         margin-bottom: 40px;
     }
 
+    /* Upload data blue card */
     .info-card {
         background-color: #eff6ff;
         border: 1px solid #bfdbfe;
@@ -123,16 +131,18 @@ def load_css():
         margin-bottom: 30px;
     }
 
+    /* Data requirements title */
     .info-title {
         color: #1e3a8a;
-        font-size: 22px;
-        font-weight: 700;
+        font-size: 24px;
+        font-weight: 600;
         margin-bottom: 20px;
     }
 
+    /* Text inside blue card */
     .info-text {
         color: #1d4ed8;
-        font-size: 16px;
+        font-size: 19px;
         line-height: 2;
     }
 
