@@ -143,7 +143,7 @@ def load_css():
     .info-text {
         color: #1d4ed8;
         font-size: 19px;
-        line-height: 2;
+        line-height: 1.8;
     }
 
     .upload-card {
