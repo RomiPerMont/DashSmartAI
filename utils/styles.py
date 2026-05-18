@@ -111,7 +111,7 @@ def load_css():
     .page-title {
         font-size: 38px;
         font-weight: 700;
-        color: #6b7280;
+        color: #393d43;
         margin-bottom: 2px;
     }
 
@@ -162,6 +162,7 @@ def load_css():
         text-align: center;
     }
 
+    /* Icon and circle */
     .upload-circle {
         width: 82px;
         height: 82px;
@@ -173,16 +174,17 @@ def load_css():
         align-items: center;
         justify-content: center;
         color: #2563eb;
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .upload-title {
         font-size: 24px;
         font-weight: 700;
-        color: #111827;
+        color: #4b5563;
         margin-bottom: 15px;
     }
 
+    /* Click to browse text */
     .upload-subtitle {
         font-size: 20px;
         color: #4b5563;
@@ -212,11 +214,11 @@ def load_css():
 
     .stButton > button {
         background-color: #d1d5db;
-        color: white;
+        color: #4b5563;
         border: none;
         border-radius: 12px;
         padding: 14px;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 600;
     }
         /* =========================
