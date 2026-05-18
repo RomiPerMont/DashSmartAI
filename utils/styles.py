@@ -22,6 +22,7 @@ def load_css():
         padding-top: 1.5rem;
     }
 
+    /* DASHSMARTAI title */
     .sidebar-title {
         font-size: 40px;
         font-weight: 700;
@@ -29,12 +30,14 @@ def load_css():
         margin-bottom: 5px;
     }
 
+    /* Logistics analytics subtitle */
     .sidebar-subtitle {
         font-size: 18px;
         color: #6b7280;
         margin-bottom: 35px;
     }
 
+   /*Sidebar style*/
     .nav-active {
         display: block;
         text-decoration: none !important;
